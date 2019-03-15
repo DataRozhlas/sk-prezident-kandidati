@@ -5,8 +5,11 @@ import { h, render, Component } from "preact";
 /** @jsx h */
 import { getAge } from "./datehelper";
 
+// const rootUrl = "http://data.irozhlas.cz/sk-prezident-kandidati";
+const rootUrl = "http://localhost:8000/sk-prezident-kandidati";
+
 const DisplayBox = ({ candidate, handleClick }) => {
-  const imgName = `${candidate.name.toLowerCase().replace("ová", "").replace(" ", "_")}.jpg`;
+  const imgName = `${candidate.name.toLowerCase().replace(" ", "_")}.jpg`;
 
   return (
     <div>
@@ -14,7 +17,7 @@ const DisplayBox = ({ candidate, handleClick }) => {
       <div className="displaybox">
         <div className="displaybox-top">
           <div className="displaybox-img-container">
-            <img className="displaybox-img" alt={candidate.name} src={`http://data.irozhlas.cz/us-prezident-kandidati/fotky/${imgName}`} />
+            <img className="displaybox-img" alt={candidate.name} src={`${rootUrl}/fotky/${imgName}`} />
           </div>
           <div className="displaybox-header">
             <div className="displaybox-name">{candidate.name}</div>
@@ -35,11 +38,11 @@ const DisplayBox = ({ candidate, handleClick }) => {
 
 
 const Entry = ({ candidate, id, handleClick }) => {
-  const imgName = `${candidate.name.toLowerCase().replace("ová", "").replace(" ", "_")}.jpg`;
+  const imgName = `${candidate.name.toLowerCase().replace(" ", "_")}.jpg`;
 
   return (
     <div className="entry" role="button" tabIndex="0" onClick={() => handleClick(id)}>
-      <img className="entry-img" alt={candidate.name} src={`http://data.irozhlas.cz/us-prezident-kandidati/fotky/${imgName}`} />
+      <img className="entry-img" alt={candidate.name} src={`${rootUrl}/fotky/${imgName}`} />
       <div className="entry-info">
         <div className="entry-name">{candidate.name}</div>
         <div className="entry-blurb">{candidate.blurb}</div>
@@ -72,7 +75,7 @@ class Tablo extends Component {
 
   loadData() {
     const xhr = new XMLHttpRequest();
-    const url = "https://data.irozhlas.cz/sk-prezident-kandidati/data/data.json";
+    const url = `${rootUrl}/data/data.json`;
     xhr.open("get", url, true);
     xhr.onload = () => {
       this.setState({ data: JSON.parse(xhr.responseText) });
