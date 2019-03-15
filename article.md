@@ -1,8 +1,8 @@
 title: "Kdo chce nahradit Kisku? Občanské aktivistky, kandidát s motýlkem i fanoušci Tisova Slovenska"
-perex: "Postoupí do druhého občanská aktivistka a právnička Zuzana Čaputová společně s politikem vládnoucí strany SMER expremiéra Roberta Fica a místopředsedou Evropské komise Marošem Šefčovičem? Nebo s proruskými názory uspěje soudce nejvyššího soudu Štefan Harabin? Mezi 13 kandidáty na nového slovenského prezidenta je i extremista tesknící po kladech Tisova slovenského štátu, konzervativci a „Poslední křižák“ či kandidátka skládající muzikály o odpadech. Server iROZHLAS.cz přináší přehled všech možných nástupců Andreje Kisky."
+perex: "Postoupí do druhého kola slovenských prezidentských voleb občanská aktivistka a právnička Zuzana Čaputová společně s politikem vládnoucí strany SMER expremiéra Roberta Fica a místopředsedou Evropské komise Marošem Šefčovičem? Nebo s proruskými názory uspěje soudce nejvyššího soudu Štefan Harabin? Mezi 13 kandidáty na nového slovenského prezidenta je i extremista tesknící po kladech Tisova slovenského štátu, konzervativci a „Poslední křižák“ či kandidátka skládající muzikály o odpadech. Server iROZHLAS.cz přináší přehled všech možných nástupců Andreje Kisky."
 published: "16. března 2019"
-coverimg: https://www.irozhlas.cz/sites/default/files/styles/zpravy_fotogalerie_large/public/uploader/2019-02-19t113509z_1_190219-130826_ako.JPG?itok=Mjhi3D36
-coverimg_note: "Bernie Sanders • Foto <a href='#'>Reuters</a>"
+coverimg: https://www.irozhlas.cz/sites/default/files/styles/zpravy_snowfall/public/uploader/navrh_bez_nazvu_190315-150236_zlo.png?itok=v97FVZH3
+coverimg_note: "Koláž: Filip Harzer"
 styles: []
 libraries: [] #jquery, d3, highcharts, datatables
 options: [noheader] #wide, noheader (, nopic)
